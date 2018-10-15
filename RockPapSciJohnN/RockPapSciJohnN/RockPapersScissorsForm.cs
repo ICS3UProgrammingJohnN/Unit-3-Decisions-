@@ -16,5 +16,15 @@ namespace RockPapSciJohnN
         {
             InitializeComponent();
         }
+
+        private void radComPaper_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblOutcome_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
