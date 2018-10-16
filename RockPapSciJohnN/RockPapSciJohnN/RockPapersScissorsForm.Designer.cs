@@ -49,10 +49,10 @@
             // radPlayerRock
             // 
             this.radPlayerRock.AutoSize = true;
-            this.radPlayerRock.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radPlayerRock.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radPlayerRock.Location = new System.Drawing.Point(27, 24);
             this.radPlayerRock.Name = "radPlayerRock";
-            this.radPlayerRock.Size = new System.Drawing.Size(77, 32);
+            this.radPlayerRock.Size = new System.Drawing.Size(80, 32);
             this.radPlayerRock.TabIndex = 0;
             this.radPlayerRock.TabStop = true;
             this.radPlayerRock.Text = "Rock";
@@ -61,8 +61,8 @@
             // radPlayerPaper
             // 
             this.radPlayerPaper.AutoSize = true;
-            this.radPlayerPaper.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radPlayerPaper.Location = new System.Drawing.Point(27, 85);
+            this.radPlayerPaper.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radPlayerPaper.Location = new System.Drawing.Point(188, 24);
             this.radPlayerPaper.Name = "radPlayerPaper";
             this.radPlayerPaper.Size = new System.Drawing.Size(85, 32);
             this.radPlayerPaper.TabIndex = 1;
@@ -73,10 +73,10 @@
             // radPlayerScissors
             // 
             this.radPlayerScissors.AutoSize = true;
-            this.radPlayerScissors.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radPlayerScissors.Location = new System.Drawing.Point(27, 143);
+            this.radPlayerScissors.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radPlayerScissors.Location = new System.Drawing.Point(355, 24);
             this.radPlayerScissors.Name = "radPlayerScissors";
-            this.radPlayerScissors.Size = new System.Drawing.Size(105, 32);
+            this.radPlayerScissors.Size = new System.Drawing.Size(107, 32);
             this.radPlayerScissors.TabIndex = 2;
             this.radPlayerScissors.TabStop = true;
             this.radPlayerScissors.Text = "Scissors";
@@ -86,7 +86,7 @@
             // 
             this.radComPaper.AutoSize = true;
             this.radComPaper.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radComPaper.Location = new System.Drawing.Point(44, 85);
+            this.radComPaper.Location = new System.Drawing.Point(200, 19);
             this.radComPaper.Name = "radComPaper";
             this.radComPaper.Size = new System.Drawing.Size(85, 32);
             this.radComPaper.TabIndex = 3;
@@ -99,7 +99,7 @@
             // 
             this.radComRock.AutoSize = true;
             this.radComRock.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radComRock.Location = new System.Drawing.Point(44, 24);
+            this.radComRock.Location = new System.Drawing.Point(6, 19);
             this.radComRock.Name = "radComRock";
             this.radComRock.Size = new System.Drawing.Size(77, 32);
             this.radComRock.TabIndex = 4;
@@ -111,7 +111,7 @@
             // 
             this.radComScissors.AutoSize = true;
             this.radComScissors.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radComScissors.Location = new System.Drawing.Point(44, 143);
+            this.radComScissors.Location = new System.Drawing.Point(89, 19);
             this.radComScissors.Name = "radComScissors";
             this.radComScissors.Size = new System.Drawing.Size(105, 32);
             this.radComScissors.TabIndex = 5;
@@ -122,34 +122,35 @@
             // btnPlay
             // 
             this.btnPlay.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlay.Location = new System.Drawing.Point(257, 282);
+            this.btnPlay.Location = new System.Drawing.Point(378, 370);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(68, 35);
             this.btnPlay.TabIndex = 6;
             this.btnPlay.Text = "Play";
             this.btnPlay.UseVisualStyleBackColor = true;
+            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
             // grbComputerChoice
             // 
             this.grbComputerChoice.Controls.Add(this.radComRock);
             this.grbComputerChoice.Controls.Add(this.radComPaper);
             this.grbComputerChoice.Controls.Add(this.radComScissors);
-            this.grbComputerChoice.Location = new System.Drawing.Point(402, 72);
+            this.grbComputerChoice.Location = new System.Drawing.Point(545, 12);
             this.grbComputerChoice.Name = "grbComputerChoice";
-            this.grbComputerChoice.Size = new System.Drawing.Size(177, 185);
+            this.grbComputerChoice.Size = new System.Drawing.Size(283, 61);
             this.grbComputerChoice.TabIndex = 7;
             this.grbComputerChoice.TabStop = false;
             this.grbComputerChoice.Text = "Computer";
             // 
             // grbPlayerChoice
             // 
-            this.grbPlayerChoice.BackColor = System.Drawing.Color.Transparent;
+            this.grbPlayerChoice.BackColor = System.Drawing.Color.FloralWhite;
             this.grbPlayerChoice.Controls.Add(this.radPlayerRock);
             this.grbPlayerChoice.Controls.Add(this.radPlayerPaper);
             this.grbPlayerChoice.Controls.Add(this.radPlayerScissors);
-            this.grbPlayerChoice.Location = new System.Drawing.Point(19, 72);
+            this.grbPlayerChoice.Location = new System.Drawing.Point(190, 623);
             this.grbPlayerChoice.Name = "grbPlayerChoice";
-            this.grbPlayerChoice.Size = new System.Drawing.Size(177, 185);
+            this.grbPlayerChoice.Size = new System.Drawing.Size(467, 71);
             this.grbPlayerChoice.TabIndex = 8;
             this.grbPlayerChoice.TabStop = false;
             this.grbPlayerChoice.Text = "Player";
@@ -157,19 +158,19 @@
             // picComChoice
             // 
             this.picComChoice.Image = global::RockPapSciJohnN.Properties.Resources.rock;
-            this.picComChoice.Location = new System.Drawing.Point(402, 310);
+            this.picComChoice.Location = new System.Drawing.Point(521, 79);
             this.picComChoice.Name = "picComChoice";
-            this.picComChoice.Size = new System.Drawing.Size(177, 122);
+            this.picComChoice.Size = new System.Drawing.Size(338, 335);
             this.picComChoice.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picComChoice.TabIndex = 9;
             this.picComChoice.TabStop = false;
             // 
             // picPlayerChoice
             // 
-            this.picPlayerChoice.Image = global::RockPapSciJohnN.Properties.Resources.scissors;
-            this.picPlayerChoice.Location = new System.Drawing.Point(19, 310);
+            this.picPlayerChoice.Image = global::RockPapSciJohnN.Properties.Resources.rock;
+            this.picPlayerChoice.Location = new System.Drawing.Point(12, 70);
             this.picPlayerChoice.Name = "picPlayerChoice";
-            this.picPlayerChoice.Size = new System.Drawing.Size(177, 122);
+            this.picPlayerChoice.Size = new System.Drawing.Size(319, 335);
             this.picPlayerChoice.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picPlayerChoice.TabIndex = 10;
             this.picPlayerChoice.TabStop = false;
@@ -177,10 +178,11 @@
             // lblOutcome
             // 
             this.lblOutcome.AutoSize = true;
-            this.lblOutcome.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOutcome.Location = new System.Drawing.Point(252, 50);
+            this.lblOutcome.BackColor = System.Drawing.Color.White;
+            this.lblOutcome.Font = new System.Drawing.Font("Palatino Linotype", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOutcome.Location = new System.Drawing.Point(235, 468);
             this.lblOutcome.Name = "lblOutcome";
-            this.lblOutcome.Size = new System.Drawing.Size(83, 28);
+            this.lblOutcome.Size = new System.Drawing.Size(248, 86);
             this.lblOutcome.TabIndex = 11;
             this.lblOutcome.Text = "Winner";
             this.lblOutcome.Click += new System.EventHandler(this.lblOutcome_Click);
@@ -189,7 +191,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(596, 462);
+            this.BackgroundImage = global::RockPapSciJohnN.Properties.Resources.water_wallpaper;
+            this.ClientSize = new System.Drawing.Size(871, 706);
             this.Controls.Add(this.lblOutcome);
             this.Controls.Add(this.picPlayerChoice);
             this.Controls.Add(this.picComChoice);
