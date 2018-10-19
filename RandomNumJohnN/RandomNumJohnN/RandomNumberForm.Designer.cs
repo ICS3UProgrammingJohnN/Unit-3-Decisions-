@@ -32,8 +32,8 @@
             this.txtGuess = new System.Windows.Forms.TextBox();
             this.btnCheck = new System.Windows.Forms.Button();
             this.lblAnswer = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.picAnswer = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picAnswer)).BeginInit();
             this.SuspendLayout();
             // 
             // lblGuess
@@ -57,46 +57,47 @@
             // btnCheck
             // 
             this.btnCheck.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheck.Location = new System.Drawing.Point(326, 125);
+            this.btnCheck.Location = new System.Drawing.Point(315, 136);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(89, 31);
             this.btnCheck.TabIndex = 2;
             this.btnCheck.Text = "Check";
             this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
             // lblAnswer
             // 
             this.lblAnswer.AutoSize = true;
             this.lblAnswer.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnswer.Location = new System.Drawing.Point(92, 244);
+            this.lblAnswer.Location = new System.Drawing.Point(97, 264);
             this.lblAnswer.Name = "lblAnswer";
             this.lblAnswer.Size = new System.Drawing.Size(170, 28);
             this.lblAnswer.TabIndex = 3;
             this.lblAnswer.Text = "You got it right!!!";
             // 
-            // pictureBox1
+            // picAnswer
             // 
-            this.pictureBox1.Image = global::RandomNumJohnN.Properties.Resources.checkmark;
-            this.pictureBox1.Location = new System.Drawing.Point(453, 184);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(218, 194);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.picAnswer.Image = global::RandomNumJohnN.Properties.Resources.checkmark;
+            this.picAnswer.Location = new System.Drawing.Point(453, 184);
+            this.picAnswer.Name = "picAnswer";
+            this.picAnswer.Size = new System.Drawing.Size(218, 194);
+            this.picAnswer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picAnswer.TabIndex = 4;
+            this.picAnswer.TabStop = false;
             // 
             // frmRandomNumber
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(783, 406);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picAnswer);
             this.Controls.Add(this.lblAnswer);
             this.Controls.Add(this.btnCheck);
             this.Controls.Add(this.txtGuess);
             this.Controls.Add(this.lblGuess);
             this.Name = "frmRandomNumber";
             this.Text = "Random Number Guessing Game";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAnswer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,7 +109,7 @@
         private System.Windows.Forms.TextBox txtGuess;
         private System.Windows.Forms.Button btnCheck;
         private System.Windows.Forms.Label lblAnswer;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picAnswer;
     }
 }
 

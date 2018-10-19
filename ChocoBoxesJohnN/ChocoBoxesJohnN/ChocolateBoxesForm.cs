@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Created by: John Ngundeng
+ * Created on: October 18, 2018
+ * Created for: ICS3U Programming
+ * Daily Assignment – Day #19 - Chocolate Boxes
+ * This program tells the user the prize they get 
+ * with a different amount of boxes sold
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -41,6 +49,7 @@ namespace ChocoBoxesJohnN
             else
             {
                 lblPrize.Text = "You got a small prize.";
+                lblPrize.Show();
             }
         }
     }

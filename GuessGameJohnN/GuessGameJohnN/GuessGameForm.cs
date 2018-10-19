@@ -36,11 +36,11 @@ namespace GuessGameJohnN
             // Get guess from the textbox
             userGuess = int.Parse(txtGuess.Text);
 
-            // if the guess i
+            // displays to the user weather their guess was correct or not
             if (userGuess == CORRECTNUMBER)
             {
                 this.picAnswer.Image = Properties.Resources.checkmark;
-                lblAnswer.Text = "Your guess was right!.";
+                lblAnswer.Text = "Your guess was right!";
                 lblAnswer.Show();
                 picAnswer.Show();
             }
