@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.prbProgressBar = new System.Windows.Forms.ProgressBar();
             this.btnStart = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // progressBar1
+            // prbProgressBar
             // 
-            this.progressBar1.Location = new System.Drawing.Point(63, 281);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(344, 70);
-            this.progressBar1.TabIndex = 0;
+            this.prbProgressBar.Location = new System.Drawing.Point(63, 281);
+            this.prbProgressBar.Name = "prbProgressBar";
+            this.prbProgressBar.Size = new System.Drawing.Size(344, 70);
+            this.prbProgressBar.TabIndex = 0;
             // 
             // btnStart
             // 
@@ -56,7 +56,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(494, 407);
             this.Controls.Add(this.btnStart);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.prbProgressBar);
             this.Name = "frmDoWhile";
             this.Text = "Progress Bar";
             this.ResumeLayout(false);
@@ -65,7 +65,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar prbProgressBar;
         private System.Windows.Forms.Button btnStart;
     }
 }
