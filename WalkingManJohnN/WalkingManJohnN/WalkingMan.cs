@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DoWhileJohnN
+namespace WalkingManJohnN
 {
-    static class DoWhile
+    static class WalkingMan
     {
         /// <summary>
         /// The main entry point for the application.
@@ -16,7 +16,7 @@ namespace DoWhileJohnN
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmDoWhile());
+            Application.Run(new frmWalkingMan());
         }
     }
 }

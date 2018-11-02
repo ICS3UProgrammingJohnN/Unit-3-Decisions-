@@ -1,6 +1,6 @@
-﻿namespace DoWhileJohnN
+﻿namespace WalkingManJohnN
 {
-    partial class frmDoWhile
+    partial class frmWalkingMan
     {
         /// <summary>
         /// Required designer variable.
@@ -28,45 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.prbProgressBar = new System.Windows.Forms.ProgressBar();
             this.btnStart = new System.Windows.Forms.Button();
+            this.picMan = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picMan)).BeginInit();
             this.SuspendLayout();
-            // 
-            // prbProgressBar
-            // 
-            this.prbProgressBar.Location = new System.Drawing.Point(63, 281);
-            this.prbProgressBar.Name = "prbProgressBar";
-            this.prbProgressBar.Size = new System.Drawing.Size(344, 70);
-            this.prbProgressBar.TabIndex = 0;
             // 
             // btnStart
             // 
-            this.btnStart.Font = new System.Drawing.Font("Palatino Linotype", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.Location = new System.Drawing.Point(186, 95);
+            this.btnStart.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.Location = new System.Drawing.Point(91, 48);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(107, 38);
-            this.btnStart.TabIndex = 1;
-            this.btnStart.Text = "START";
+            this.btnStart.Size = new System.Drawing.Size(79, 31);
+            this.btnStart.TabIndex = 0;
+            this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
-            // frmDoWhile
+            // picMan
+            // 
+            this.picMan.Image = global::WalkingManJohnN.Properties.Resources.walk1;
+            this.picMan.Location = new System.Drawing.Point(43, 115);
+            this.picMan.Name = "picMan";
+            this.picMan.Size = new System.Drawing.Size(179, 181);
+            this.picMan.TabIndex = 1;
+            this.picMan.TabStop = false;
+            // 
+            // frmWalkingMan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(494, 407);
+            this.ClientSize = new System.Drawing.Size(263, 353);
+            this.Controls.Add(this.picMan);
             this.Controls.Add(this.btnStart);
-            this.Controls.Add(this.prbProgressBar);
-            this.Name = "frmDoWhile";
-            this.Text = "Progress Bar";
+            this.Name = "frmWalkingMan";
+            this.Text = "Walking Man";
+            ((System.ComponentModel.ISupportInitialize)(this.picMan)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ProgressBar prbProgressBar;
         private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.PictureBox picMan;
     }
 }
 

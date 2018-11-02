@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3F8FE0D6-1FE0-4439-88B5-1CC67210F9AD}</ProjectGuid>
+    <ProjectGuid>{088D8936-5999-4D7E-8BAB-24509FC551C1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>DoWhileJohnN</RootNamespace>
-    <AssemblyName>DoWhileJohnN</AssemblyName>
+    <RootNamespace>WalkingManJohnN</RootNamespace>
+    <AssemblyName>WalkingManJohnN</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,18 +45,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DoWhileForm.cs">
+    <Compile Include="WalkingManForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include=".Designer.cs">
-      <DependentUpon>DoWhileForm.cs</DependentUpon>
-      <SubType>Form</SubType>
+    <Compile Include="WalkingManForm.Designer.cs">
+      <DependentUpon>WalkingManForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DoWhile.cs" />
+    <Compile Include="WalkingMan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="DoWhileForm.resx">
-      <DependentUpon>DoWhileForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -65,7 +61,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="WalkingManForm.resx">
+      <DependentUpon>WalkingManForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -78,6 +78,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walk1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walk2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walk3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walk4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walk5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walk6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walk7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walk8.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walk9.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walk10.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

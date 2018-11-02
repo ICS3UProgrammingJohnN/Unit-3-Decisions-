@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DoWhileJohnN.Properties
+namespace WalkingManJohnN.Properties
 {
 
 
