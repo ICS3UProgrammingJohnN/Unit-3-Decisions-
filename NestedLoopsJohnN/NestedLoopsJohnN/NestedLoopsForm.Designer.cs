@@ -59,7 +59,7 @@
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.lstLetters);
             this.Name = "frmNestedLoops";
-            this.Text = "Form1";
+            this.Text = "Nested loops";
             this.ResumeLayout(false);
 
         }
